@@ -86,7 +86,7 @@ pythonpath = "."
 addopts = "-p no:warnings"
 
 [tool.taskipy.tasks]
-run = "fastapi dev src/main.py"
+run = "fastapi dev src/app.py"
 test = "pytest -s -x --cov=src -vv"
 post_test = "coverage html"
 lint = "ruff check . && ruff check . --diff"
